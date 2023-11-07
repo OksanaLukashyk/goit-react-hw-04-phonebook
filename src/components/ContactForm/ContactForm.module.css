@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d9a7c7,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d9a7c7,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 5px 0px;
+}
+
+.formLabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  gap: 8px;
+}
+
+.formInput {
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #00223e;
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 5px 0px;
+}
+
+.button {
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  border-color: transparent;
+  outline: none;
+  border-radius: 15px;
+  background: transparent;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: seashell;
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 10px 10px inset;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2px #d9a7c7, 0 0 5px #ec38bc, 0 0 15px #7303c0,
+    0 0 30px #03001e;
+  animation: pulsate-light 2s infinite alternate;
+}
+
+@keyframes pulsate-light {
+  100% {
+    box-shadow: 0 0 2px #fff, 0 0 10px #d9a7c7, 0 0 20px #ec38bc,
+      0 0 35px #7303c0;
+  }
+  0% {
+    box-shadow: 0 0 2px #fff, 0 0 7px #d9a7c7, 0 0 12px #ec38bc,
+      0 0 25px #7303c0;
+  }
+}

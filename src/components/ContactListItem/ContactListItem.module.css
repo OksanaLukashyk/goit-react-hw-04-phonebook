@@ -1,0 +1,45 @@
+.contactListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 10px;
+  border-radius: 15px;
+  /* box-shadow: rgb(255, 255, 255) -1px -1px 1px, rgb(186, 204, 203) 2px 2px 2px; */
+  box-shadow: 0 0 10px 0;
+  background: inherit;
+  backdrop-filter: blur(20px);
+}
+
+.deleteContactBtn {
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+  border-color: transparent;
+  outline: none;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: seashell;
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 10px 10px inset;
+  transition: transform 0.3s ease-in-out;
+}
+
+.deleteContactBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2px #d9a7c7, 0 0 5px #ec38bc, 0 0 15px #7303c0,
+    0 0 30px #03001e;
+  animation: pulsate-light 2s infinite alternate;
+}
+
+@keyframes pulsate-light {
+  100% {
+    box-shadow: 0 0 2px #fff, 0 0 10px #d9a7c7, 0 0 20px #ec38bc,
+      0 0 35px #7303c0;
+  }
+  0% {
+    box-shadow: 0 0 2px #fff, 0 0 7px #d9a7c7, 0 0 12px #ec38bc,
+      0 0 25px #7303c0;
+  }
+}
